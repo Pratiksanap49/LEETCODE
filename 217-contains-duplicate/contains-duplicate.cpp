@@ -6,9 +6,6 @@ public:
 
         for(int num:nums){
             mp[num]++;
-        }
-
-        for(int num:nums){
             if( mp[num] > 1 ) return 1 ;
         }
 
