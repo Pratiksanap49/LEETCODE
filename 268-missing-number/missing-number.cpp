@@ -4,16 +4,13 @@ public:
 
         unordered_map<int,int>mp;
 
-        for(int num:nums){
-            mp[num]++;
-            // if(mp[num]==0) return num;
+        for(int num:nums) mp[num]++; 
+
+        for(int i = 0 ; i <= nums.size();i++){
+            if(mp[i]==0) return i;
         }
 
-        for (int i = 0; i <= nums.size(); i++) {
-            if (mp[i] == 0)
-                return i;
-        }
-         return -1;
+        return -1;
         
     }
 };
